@@ -30,8 +30,3 @@ function App() {
 }
 
 export default App;
-git init
-git remote add origin https://github.com/tuusuario/volume-signal-frontend.git
-git add .
-git commit -m "frontend react"
-git push -u origin master
