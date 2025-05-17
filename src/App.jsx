@@ -8,7 +8,7 @@ function App() {
       try {
         const response = await fetch("https://volume-signal-backend.onrender.com/signal");
         const data = await response.json();
-        setSignal(data.signal);
+        setSignal(`${data.token} | ${data.direction.toUpperCase()} | $${data.price}`);
       } catch (error) {
         console.error("Error fetching signal:", error);
         setSignal("Error al conectar con el servidor.");
