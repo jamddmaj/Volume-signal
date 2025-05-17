@@ -25,7 +25,9 @@ function App() {
     <div style={{ padding: "2rem", fontFamily: "Arial", textAlign: "center" }}>
       <h1>Volume Signal Activo</h1>
       <p style={{ fontSize: "1.5rem" }}>
-        Señal actual: <strong>{signal || "Cargando..."}</strong>
+        Señal actual: <strong style={{ color: "#00FF99", fontWeight: "bold" }}>
+  {signal || "Cargando..."}
+</strong>
       </p>
     </div>
   );
